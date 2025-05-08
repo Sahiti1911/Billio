@@ -1,0 +1,8 @@
+<div class="container mt-4 text-center">
+  <h4>Scan QR on your bill</h4>
+  <zxing-scanner
+    [formats]="formatsEnabled"
+    (scanSuccess)="onCodeResult($event)"
+  >
+  </zxing-scanner>
+</div>

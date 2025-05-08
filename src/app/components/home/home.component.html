@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h2>Your Bills</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let bill of bills">
+      <div class="card">
+        <img [src]="bill.image" class="card-img-top" alt="Bill" />
+        <div class="card-body">
+          <h5 class="card-title">{{ bill.title }}</h5>
+          <p class="card-text">{{ bill.date | date : "short" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4"
+    style="width: 60px; height: 60px; font-size: 24px"
+    (click)="goToScanner()"
+  >
+    +
+  </button>
+</div>
