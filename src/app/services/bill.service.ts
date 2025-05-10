@@ -10,7 +10,7 @@ export interface Bill {
   providedIn: 'root',
 })
 export class BillService {
-  private bills: Bill[] = [
+  protected bills: Bill[] = [
     {
       image: 'https://billio2.blob.core.windows.net/billio/00056_Page1.png',
       date: new Date('2025-05-03'),
