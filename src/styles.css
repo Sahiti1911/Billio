@@ -2,4 +2,7 @@
     transform: scale(1.02);
     transition: transform 0.2s ease-in-out;
   }
-  
+
+
+html, body { height: auto; }
+body { margin: 0; font-family: 'Tinos', sans-serif; }

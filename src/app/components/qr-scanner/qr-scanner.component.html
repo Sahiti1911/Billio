@@ -1,8 +1,12 @@
-<div class="container mt-4 text-center">
-  <h4>Scan QR on your bill</h4>
-  <zxing-scanner
-    [formats]="formatsEnabled"
-    (scanSuccess)="onCodeResult($event)"
-  >
-  </zxing-scanner>
+<div class="qr-container">
+  <div class="qr-card">
+    <h2 class="qr-title">Scan the QR Code on Your Bill</h2>
+    <zxing-scanner
+      [formats]="formatsEnabled"
+      (scanSuccess)="onCodeResult($event)"
+    ></zxing-scanner>
+    <p class="qr-instructions">
+      Ensure the QR code is clearly visible within the frame.
+    </p>
+  </div>
 </div>

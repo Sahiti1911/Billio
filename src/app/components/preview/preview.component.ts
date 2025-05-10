@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { BillService } from '../../services/bill.service';
+import { Bill, BillService } from '../../services/bill.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-preview',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule],
   templateUrl: './preview.component.html',
   styleUrls: ['./preview.component.css'],
 })
@@ -29,15 +32,16 @@ export class PreviewComponent implements OnInit {
     if (this.billImage) {
       console.log('Bill image is present:', this.billImage);
 
-      const bill = {
+      const newbill: Bill = {
         image: this.billImage,
         date: new Date(),
-        title: 'Scanned Bill',
+        title: 'New Invoice',
       };
 
-      console.log('Adding bill:', bill);
+      console.log('Adding bill:', newbill);
 
-      this.billService.addBill(bill);
+      this.billService.addBill(newbill);
+      console.log('Bill added:', newbill);
 
       console.log('Temporary image cleared');
       this.billService.clearTempImage();

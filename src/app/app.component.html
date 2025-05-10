@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+<header class="mobile-header">
+  <img src="assets/Billio.svg" class="header-logo" alt="Billio Logo" />
+  <span class="header-title">Billio</span>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<nav class="bottom-nav">
+  <a (click)="navigateTo('')">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </a>
+  <a (click)="navigateTo('/scan')">
+    <mat-icon>qr_code_scanner</mat-icon>
+    <span>Scan</span>
+  </a>
+  <a (click)="navigateTo('/profile')">
+    <mat-icon>person</mat-icon>
+    <span>Profile</span>
+  </a>
+</nav>

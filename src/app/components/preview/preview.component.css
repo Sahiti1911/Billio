@@ -1,0 +1,40 @@
+.preview-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 7px 10px 0 10px;
+  background: linear-gradient(to right, #f5faff, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.preview-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1976d2;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.bill-image-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.bill-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.button-group-horizontal {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

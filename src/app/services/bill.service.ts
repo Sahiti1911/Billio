@@ -12,12 +12,37 @@ export interface Bill {
 export class BillService {
   private bills: Bill[] = [
     {
-      image: 'assets/Bill1.jpg',
+      image: 'https://billio2.blob.core.windows.net/billio/00056_Page1.png',
       date: new Date('2025-05-03'),
       title: 'Electronics Invoice',
     },
     {
-      image: 'assets/bill2.jpg',
+      image: 'assets/Bill2.jpg',
+      date: new Date('2025-04-15'),
+      title: 'Grocery Invoice',
+    },
+    {
+      image: 'assets/Bill1.jpg',
+      date: new Date('2025-04-15'),
+      title: 'Grocery Invoice',
+    },
+    {
+      image: 'assets/Bill2.jpg',
+      date: new Date('2025-04-15'),
+      title: 'Grocery Invoice',
+    },
+    {
+      image: 'assets/Bill1.jpg',
+      date: new Date('2025-04-15'),
+      title: 'Grocery Invoice',
+    },
+    {
+      image: 'assets/Bill2.jpg',
+      date: new Date('2025-04-15'),
+      title: 'Grocery Invoice',
+    },
+    {
+      image: 'assets/Bill1.jpg',
       date: new Date('2025-04-15'),
       title: 'Grocery Invoice',
     },
